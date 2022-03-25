@@ -4,6 +4,7 @@ class Control:
 
     def enlazar(self,Televisor):
         self._tv = Televisor
+        self._tv.setControl(self)
 
     def turnOn(self):
         self._tv.turnOn()
@@ -31,5 +32,5 @@ class Control:
 
     def setTv(self,NuevoTele):
         self._tv = NuevoTele
-        self._tv.setControl(self)
+
 
