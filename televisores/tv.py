@@ -10,6 +10,10 @@ class TV:
         self._control = None
         TV._numTV += 1
 
+    @classmethod
+    def setNumTv(cls,Nuevo):
+        cls._numTV = Nuevo
+
     def getMarca(self):
         return self._marca
 
@@ -29,11 +33,11 @@ class TV:
         return self._precio
 
     def setCanal(self, NuevoCanal):
-        if NuevoCanal > 0 and NuevoCanal < 121:
+        if NuevoCanal > 0 and NuevoCanal < 121 and self._estado == True:
             self._canal = NuevoCanal
 
     def setVolumen(self, NuevoVolumen):
-        if NuevoVolumen >= 0 and NuevoVolumen <= 7:
+        if NuevoVolumen >= 0 and NuevoVolumen <= 7 and self._estado == True:
             self._volumen = NuevoVolumen
 
     def setMarca(self, NuevaMarca):
