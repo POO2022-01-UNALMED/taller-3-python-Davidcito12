@@ -11,7 +11,7 @@ class TV:
         TV._numTV += 1
 
     @classmethod
-    def setNumTv(cls,Nuevo):
+    def setNumTV(cls,Nuevo):
         cls._numTV = Nuevo
 
     def getMarca(self):
