@@ -31,4 +31,5 @@ class Control:
 
     def setTv(self,NuevoTele):
         self._tv = NuevoTele
+        self._tv.setControl = self
 
